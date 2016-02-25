@@ -30,11 +30,20 @@ public class ExcelClient {
 
 			Sheet sh = wb.createSheet(requestSheet.getSheetName());
 			
-			int rownum = 0;
+			// creates column names
+			Row row = sh.createRow(0);
+			int cellnum = 0;
+			for (String columnNames : requestSheet.getSheetBody().get(0).keySet()) {
+				Cell cell = row.createCell(cellnum++);
+				cell.setCellValue(columnNames);
+			};
+			
+			// created table
+			int rownum = 1;
 			for (Map<String, String> sheetBody : requestSheet.getSheetBody()) {
-				Row row = sh.createRow(rownum++);
+				row = sh.createRow(rownum++);
 				
-				int cellnum = 0;
+				cellnum = 0;
 				for (Entry<String, String> column : sheetBody.entrySet()) {
 					Cell cell = row.createCell(cellnum++);
 					cell.setCellValue(column.getValue());
