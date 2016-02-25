@@ -1,0 +1,54 @@
+{
+  "excelTitle": "ratecardPromoBrief",
+  "sheets":
+    [
+      {
+        "sheetName": "ratecard1",
+        "sheetBody":
+          [
+            {
+              "column1": "value1",
+              "column2": "value2",
+              "column3": "value3",
+              "column4": "value4"
+            },
+            {
+              "column1": "value1",
+              "column2": "value2",
+              "column3": "value3",
+              "column4": "value4"
+            },
+            {
+              "column1": "value1",
+              "column2": "value2",
+              "column3": "value3",
+              "column4": "value4"
+            }
+          ]
+      },
+      {
+        "sheetName": "ratecard2",
+        "sheetBody":
+          [
+            {
+              "column1": "value1",
+              "column2": "value2",
+              "column3": "value3",
+              "column4": "value4"
+            },
+            {
+              "column1": "value1",
+              "column2": "value2",
+              "column3": "value3",
+              "column4": "value4"
+            },
+            {
+              "column1": "value1",
+              "column2": "value2",
+              "column3": "value3",
+              "column4": "value4"
+            }
+          ]
+      }
+    ]
+}
